@@ -17,12 +17,20 @@
 		EB008C7E1822B7000007F704 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008C7D1822B7000007F704 /* Default@2x.png */; };
 		EB008C801822B7000007F704 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008C7F1822B7000007F704 /* Default-568h@2x.png */; };
 		EB008C831822B7000007F704 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB008C811822B7000007F704 /* MainStoryboard.storyboard */; };
-		EB008C861822B7000007F704 /* Lesson3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008C851822B7000007F704 /* Lesson3ViewController.m */; };
 		EB008C8E1822B7000007F704 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB008C8D1822B7000007F704 /* SenTestingKit.framework */; };
 		EB008C8F1822B7000007F704 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB008C691822B7000007F704 /* UIKit.framework */; };
 		EB008C901822B7000007F704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB008C6B1822B7000007F704 /* Foundation.framework */; };
 		EB008C981822B7000007F704 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB008C961822B7000007F704 /* InfoPlist.strings */; };
 		EB008C9B1822B7000007F704 /* Lesson3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008C9A1822B7000007F704 /* Lesson3Tests.m */; };
+		EB008CA61822B76D0007F704 /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008CA51822B76D0007F704 /* Transport.m */; };
+		EB008CA91822B7880007F704 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008CA81822B7880007F704 /* Vehicle.m */; };
+		EB008CAC1822B9520007F704 /* TaxiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008CAB1822B9520007F704 /* TaxiTableViewController.m */; };
+		EB008CAF1822BE440007F704 /* ActiveTaxiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008CAE1822BE440007F704 /* ActiveTaxiCell.m */; };
+		EB008CB21822BE600007F704 /* TaxiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB008CB11822BE600007F704 /* TaxiCell.m */; };
+		EB008CBA1826FE510007F704 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008CB61826FE510007F704 /* star.png */; };
+		EB008CBB1826FE510007F704 /* star_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008CB71826FE510007F704 /* star_grey.png */; };
+		EB008CBC1826FE510007F704 /* star_grey_min.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008CB81826FE510007F704 /* star_grey_min.png */; };
+		EB008CBD1826FE510007F704 /* star_min.png in Resources */ = {isa = PBXBuildFile; fileRef = EB008CB91826FE510007F704 /* star_min.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +58,26 @@
 		EB008C7D1822B7000007F704 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EB008C7F1822B7000007F704 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EB008C821822B7000007F704 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		EB008C841822B7000007F704 /* Lesson3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lesson3ViewController.h; sourceTree = "<group>"; };
-		EB008C851822B7000007F704 /* Lesson3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson3ViewController.m; sourceTree = "<group>"; };
 		EB008C8C1822B7000007F704 /* Lesson3Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson3Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB008C8D1822B7000007F704 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		EB008C951822B7000007F704 /* Lesson3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lesson3Tests-Info.plist"; sourceTree = "<group>"; };
 		EB008C971822B7000007F704 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB008C991822B7000007F704 /* Lesson3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lesson3Tests.h; sourceTree = "<group>"; };
 		EB008C9A1822B7000007F704 /* Lesson3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson3Tests.m; sourceTree = "<group>"; };
+		EB008CA41822B76D0007F704 /* Transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transport.h; sourceTree = "<group>"; };
+		EB008CA51822B76D0007F704 /* Transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transport.m; sourceTree = "<group>"; };
+		EB008CA71822B7880007F704 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		EB008CA81822B7880007F704 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		EB008CAA1822B9520007F704 /* TaxiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiTableViewController.h; path = UI/TaxiTableViewController.h; sourceTree = "<group>"; };
+		EB008CAB1822B9520007F704 /* TaxiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiTableViewController.m; path = UI/TaxiTableViewController.m; sourceTree = "<group>"; };
+		EB008CAD1822BE440007F704 /* ActiveTaxiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActiveTaxiCell.h; path = UI/ActiveTaxiCell.h; sourceTree = "<group>"; };
+		EB008CAE1822BE440007F704 /* ActiveTaxiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActiveTaxiCell.m; path = UI/ActiveTaxiCell.m; sourceTree = "<group>"; };
+		EB008CB01822BE600007F704 /* TaxiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiCell.h; path = UI/TaxiCell.h; sourceTree = "<group>"; };
+		EB008CB11822BE600007F704 /* TaxiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiCell.m; path = UI/TaxiCell.m; sourceTree = "<group>"; };
+		EB008CB61826FE510007F704 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		EB008CB71826FE510007F704 /* star_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_grey.png; sourceTree = "<group>"; };
+		EB008CB81826FE510007F704 /* star_grey_min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_grey_min.png; sourceTree = "<group>"; };
+		EB008CB91826FE510007F704 /* star_min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_min.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +137,20 @@
 		EB008C6F1822B7000007F704 /* Lesson3 */ = {
 			isa = PBXGroup;
 			children = (
+				EB008CB51826FE510007F704 /* Images */,
+				EB008CAA1822B9520007F704 /* TaxiTableViewController.h */,
+				EB008CAB1822B9520007F704 /* TaxiTableViewController.m */,
 				EB008C781822B7000007F704 /* Lesson3AppDelegate.h */,
 				EB008C791822B7000007F704 /* Lesson3AppDelegate.m */,
 				EB008C811822B7000007F704 /* MainStoryboard.storyboard */,
-				EB008C841822B7000007F704 /* Lesson3ViewController.h */,
-				EB008C851822B7000007F704 /* Lesson3ViewController.m */,
+				EB008CAD1822BE440007F704 /* ActiveTaxiCell.h */,
+				EB008CAE1822BE440007F704 /* ActiveTaxiCell.m */,
+				EB008CB01822BE600007F704 /* TaxiCell.h */,
+				EB008CB11822BE600007F704 /* TaxiCell.m */,
+				EB008CA41822B76D0007F704 /* Transport.h */,
+				EB008CA51822B76D0007F704 /* Transport.m */,
+				EB008CA71822B7880007F704 /* Vehicle.h */,
+				EB008CA81822B7880007F704 /* Vehicle.m */,
 				EB008C701822B7000007F704 /* Supporting Files */,
 			);
 			path = Lesson3;
@@ -158,6 +187,17 @@
 				EB008C961822B7000007F704 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB008CB51826FE510007F704 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB008CB61826FE510007F704 /* star.png */,
+				EB008CB71826FE510007F704 /* star_grey.png */,
+				EB008CB81826FE510007F704 /* star_grey_min.png */,
+				EB008CB91826FE510007F704 /* star_min.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +277,10 @@
 				EB008C7E1822B7000007F704 /* Default@2x.png in Resources */,
 				EB008C801822B7000007F704 /* Default-568h@2x.png in Resources */,
 				EB008C831822B7000007F704 /* MainStoryboard.storyboard in Resources */,
+				EB008CBA1826FE510007F704 /* star.png in Resources */,
+				EB008CBB1826FE510007F704 /* star_grey.png in Resources */,
+				EB008CBC1826FE510007F704 /* star_grey_min.png in Resources */,
+				EB008CBD1826FE510007F704 /* star_min.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +317,11 @@
 			files = (
 				EB008C761822B7000007F704 /* main.m in Sources */,
 				EB008C7A1822B7000007F704 /* Lesson3AppDelegate.m in Sources */,
-				EB008C861822B7000007F704 /* Lesson3ViewController.m in Sources */,
+				EB008CA61822B76D0007F704 /* Transport.m in Sources */,
+				EB008CA91822B7880007F704 /* Vehicle.m in Sources */,
+				EB008CAC1822B9520007F704 /* TaxiTableViewController.m in Sources */,
+				EB008CAF1822BE440007F704 /* ActiveTaxiCell.m in Sources */,
+				EB008CB21822BE600007F704 /* TaxiCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,23 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ne5-Fl-4vf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--Taxi Table View Controller - Root View Controller-->
+        <scene sceneID="3GZ-48-1Qn">
             <objects>
-                <viewController id="2" customClass="Lesson3ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tableViewController id="Kpj-p1-3Zm" customClass="TaxiTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Sju-oe-X71">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ActiveTaxiCell" id="qhE-Zy-c7v" customClass="TaxiCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yE-6b-xBW">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfQ-4n-zJR">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="jwN-FV-UeX"/>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="jwN-FV-UeX" firstAttribute="top" secondItem="qhE-Zy-c7v" secondAttribute="top" type="default" id="0K6-tV-pNL"/>
+                                    <constraint firstItem="jwN-FV-UeX" firstAttribute="leading" secondItem="qhE-Zy-c7v" secondAttribute="leading" constant="10" id="Ueq-Ls-Moi"/>
+                                    <constraint firstItem="jwN-FV-UeX" firstAttribute="centerY" secondItem="YfQ-4n-zJR" secondAttribute="centerY" type="default" id="Yk5-1D-gJB"/>
+                                    <constraint firstItem="7yE-6b-xBW" firstAttribute="centerY" secondItem="qhE-Zy-c7v" secondAttribute="centerY" type="default" id="h1j-QI-bSs"/>
+                                    <constraint firstItem="7yE-6b-xBW" firstAttribute="leading" secondItem="qhE-Zy-c7v" secondAttribute="leading" constant="64" id="xZh-c1-v5y"/>
+                                    <constraint firstAttribute="trailing" secondItem="YfQ-4n-zJR" secondAttribute="trailing" constant="44" id="yNB-Iq-WLh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="taxiImage" destination="jwN-FV-UeX" id="bS6-Ur-k7h"/>
+                                    <outlet property="taxiName" destination="7yE-6b-xBW" id="o1j-Cl-Ja6"/>
+                                    <outlet property="taxiPrice" destination="YfQ-4n-zJR" id="ewn-st-1zQ"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TaxiCell" id="eIh-md-VIj" customClass="TaxiCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siR-Sd-O4D">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8T-Dp-0Gd">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-PM-7hm"/>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="6S6-PM-7hm" firstAttribute="centerY" secondItem="J8T-Dp-0Gd" secondAttribute="centerY" type="default" id="0Mz-Z3-4xd"/>
+                                    <constraint firstItem="siR-Sd-O4D" firstAttribute="leading" secondItem="eIh-md-VIj" secondAttribute="leading" constant="64" id="7sx-WO-fG0"/>
+                                    <constraint firstItem="6S6-PM-7hm" firstAttribute="leading" secondItem="eIh-md-VIj" secondAttribute="leading" constant="10" id="H97-7q-bLd"/>
+                                    <constraint firstItem="6S6-PM-7hm" firstAttribute="top" secondItem="eIh-md-VIj" secondAttribute="top" type="default" id="TfU-Xv-35Q"/>
+                                    <constraint firstItem="siR-Sd-O4D" firstAttribute="centerY" secondItem="eIh-md-VIj" secondAttribute="centerY" type="default" id="gel-1Q-5Az"/>
+                                    <constraint firstAttribute="trailing" secondItem="J8T-Dp-0Gd" secondAttribute="trailing" constant="44" id="p8C-dN-aVM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="taxiImage" destination="6S6-PM-7hm" id="fBe-5H-Lse"/>
+                                    <outlet property="taxiName" destination="siR-Sd-O4D" id="pcP-1V-ogr"/>
+                                    <outlet property="taxiPrice" destination="J8T-Dp-0Gd" id="pf6-I6-Cix"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ool-tu-3bb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQf-8d-zpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="565" y="180"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fj9-EK-A94">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ne5-Fl-4vf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eb9-9C-ObG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kpj-p1-3Zm" kind="relationship" relationship="rootViewController" id="zvn-Cp-AxN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VL4-HX-etu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="180"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.png" width="42" height="42"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TaxiCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TaxiCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="taxiImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="taxiName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="taxiPrice" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TaxiTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TaxiTableViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

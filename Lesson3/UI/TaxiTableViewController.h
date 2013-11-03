@@ -1,5 +1,5 @@
 //
-//  Lesson3ViewController.h
+//  TaxiTableViewController.h
 //  Lesson3
 //
 //  Created by Alex R on 31.10.13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Lesson3ViewController : UIViewController
+@interface TaxiTableViewController : UITableViewController
 
 @end

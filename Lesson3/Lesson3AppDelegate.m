@@ -7,12 +7,17 @@
 //
 
 #import "Lesson3AppDelegate.h"
+#import "Vehicle.h"
 
 @implementation Lesson3AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    Vehicle * opel = [Vehicle vehicleWithName:@"Opel Astra H" withPrice:[NSNumber numberWithInt:21000]];
+    
+    NSLog(@"Vehicle:%@  Price:%@",opel.name,opel.price);
+    
+    
     return YES;
 }
 							
